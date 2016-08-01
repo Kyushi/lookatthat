@@ -3,32 +3,10 @@
 ## Requirements ##
 
 * Web browser
-* Terminal/Command line
-
-
-#### Recommended ####
-
-* Python
 
 ---
 ## Quickstart ##
 
-##### Simple start #####
+This page is hosted on github pages. You can visit this site here:
 
-* download project
-* open project folder
-* double click file `index.html` to open in your standard browser
-
-
-##### Recommended #####
-
-* download project
-* open Terminal, navigate to project folder:
-```
-cd path/to/projectfolder
-```
-* start Python servlet:
-```
-python -m SimpleHTTPServer
-```
-* in your browser type 'localhost:8000' in the address bar
+<a href="http://kyushi.github.io/portfolio/">http://kyushi.github.io/portfolio/</a>
