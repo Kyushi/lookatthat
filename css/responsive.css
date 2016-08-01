@@ -1,0 +1,44 @@
+/* styling elements for max-width 450px */
+
+@media screen and (max-width: 450px) {
+  h1, .logo {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  .showcase-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    z-index: 1;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .page-title {
+    color: #c0c0c0;
+  }
+  .navbar {
+    order: -1;
+  }
+  .logo-and-title {
+    order: 0;
+  }
+}
+
+/* style elements for mid-range viewport sizes */
+@media screen and (min-width: 451px) and (max-width: 651px) {
+
+}

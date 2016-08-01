@@ -1,0 +1,66 @@
+/* reset styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* general styles for entire body */
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* make sure every image on the page is displayed at max 100% */
+
+img {
+  max-width: 100%;
+}
+
+/* header sizes, weights and colours */
+
+h1 {
+  font-weight: 300;
+  font-size: 35px;
+  text-transform: uppercase; }
+
+h2 {
+  font-weight: 300;
+  font-size: 25px;
+  color: #a1a1a3; }
+
+h3 {
+  font-weight: 200;
+  font-size: 20px;
+  color: #735280; }
+
+h5 {
+  font-weight: 200;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* general styles for paragraphs */
+
+p {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* my styles to add to bootstrap */
+
+.page-title {
+  text-align: right;
+}
+
+.page-title-name {
+  margin-bottom: 0.3em;
+}
+
+.logo {
+  font-size: 35px;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+
+.item-title {
+  text-align: center;
+}
