@@ -20,25 +20,12 @@
   }
 }
 
+/* make sure the button to close modal is big enough on (most) touch screens */
 @media screen and (max-width: 768px) {
 
-  .page-title {
-    color: #c0c0c0;
-  }
-  .navbar {
-    order: -1;
-  }
-  .logo-and-title {
-    order: 0;
-  }
   .close {
     font-size: 36px;
     border: 0;
     background-color: #fff;
   }
-}
-
-/* style elements for mid-range viewport sizes */
-@media screen and (min-width: 451px) and (max-width: 651px) {
-
 }
