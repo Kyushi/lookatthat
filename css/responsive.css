@@ -31,9 +31,10 @@
   .logo-and-title {
     order: 0;
   }
-  .close, .modal-title {
-    font-size: 48px;
-    width: 1em;
+  .close {
+    font-size: 36px;
+    border: 0;
+    background-color: #fff;
   }
 }
 
