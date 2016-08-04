@@ -45,7 +45,7 @@ h5 {
 
 /* general styles for paragraphs */
 
-p {
+p, a {
   font-size: 15px;
   font-weight: 300;
 }
@@ -67,6 +67,10 @@ article {
   font-size: 35px;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
+}
+
+.logo img {
+  min-width: 45px;
 }
 
 .showcase-title {
@@ -102,7 +106,7 @@ article {
   margin-top: 0.67em;
 }
 
-.item-link-modal {
+.item-link, .item-link-modal {
   text-align: left;
 }
 
@@ -115,9 +119,14 @@ article {
 .modal-header {
   width: 100%;
 }
-
 .modal-header:after {
   clear:both;
+}
+.modal-see-more {
+  color: #337ab7;
+}
+.modal-see-more:hover {
+  text-decoration: underline;
 }
 
 footer {
