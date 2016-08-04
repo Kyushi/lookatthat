@@ -31,6 +31,10 @@
   .logo-and-title {
     order: 0;
   }
+  .close, .modal-title {
+    font-size: 48px;
+    width: 1em;
+  }
 }
 
 /* style elements for mid-range viewport sizes */
