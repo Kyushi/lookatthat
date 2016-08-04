@@ -35,6 +35,11 @@ h3 {
   font-size: 20px;
   color: #735280; }
 
+h4 {
+  font-weight: 200;
+  font-size: 18px;
+}
+
 h5 {
   font-weight: 200;
   font-size: 14px;
@@ -49,6 +54,9 @@ p {
 }
 
 /* my styles to add to bootstrap */
+article {
+  margin-bottom: 10px;
+}
 
 .page-title {
   text-align: right;
@@ -64,16 +72,60 @@ p {
   margin-bottom: 0.67em;
 }
 
+.showcase-title {
+  margin: 10px 0;
+}
+
+.showcase-item img {
+  border: 1px solid #000;
+}
+
 .item-title {
   text-align: center;
 }
 
-.social-media-icons li{
+.item-description {
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.social-media-icons li {
   float: left;
   list-style-type: none;
 }
 .social-media-icons:after {
   clear: both;
+}
+
+.item-description-modal {
+  font-size: 14px;
+  margin-top: 0.67em;
+}
+
+.item-link-modal {
+  text-align: left;
+}
+
+.close {
+  float: right;
+}
+.modal-title {
+  float: left;
+}
+.modal-header {
+  width: 100%;
+}
+
+.modal-header:after {
+  clear:both;
+}
+
+footer {
+  font-size: 16px;
+  padding-bottom: .67em;
 }
 /* zocial */
 [class*="zocial-"]:before {

@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kyushi Isshou">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta id="theme-color" name="theme-color" content="#067800">
+    <meta id="theme-color" name="theme-color" content="#17f011">
     <title>Kyushi's portfolio</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -25,30 +27,6 @@
 <!-- bootstrap container -->
     <div class="container">
 
-      <!-- Let's add a navbar here
-
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">This isn't working</a>
-                </div>
-                  Collect the nav links, forms, and other content for toggling
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-      -->
-
 <!-- header starts here -->
       <header class="row logo-and-title">
           <!-- my logo -->
@@ -59,7 +37,7 @@
           <!-- header title and subtitle -->
           <div class="page-title col-xs-8">
             <h1 class="page-title-name">Franziskus Nakajima</h1>
-            <h5 class="page-subtitle">I like seeing things</h5>
+            <h4 class="page-subtitle">I build websites</h4>
           </div>
 
 
@@ -87,74 +65,60 @@
         </div>
 
         <article class="col-xs-6 col-sm-6 col-md-4 col-lg-3 showcase-item">
-
-          <img class="img-responsive" src="images/field-450_small.jpg" alt="The grass is green and the forest is dark">
-
-          <div class="item-title">
-            <h3>Field trip around Berlin</h3>
+          <div role="button" class="modal-link" data-toggle="modal" data-target="#ohsoartsy-modal">
+            <img class="img-responsive" src="images/ohsoartsy-450_small.png" alt="Screenshot of an arthouse movie trailer website">
           </div>
-
-          <div class="item-link">
-
-            <a href="https://github.com/Kyushi">
-              See more ...
-            </a>
-
+          <div class="item-title">
+            <h3>Ohsoartsy!</h3>
+            <p class="item-description">
+              A movie trailer website with a python backend that I built for Udacity's Full Stack Web Developer Nanodegree in July 2016.
+            </p>
+            <a href="https://github.com/Kyushi/ohsoartsy" target="_blank">https://github.com/Kyushi/ohsoartsy</a>
           </div>
 
         </article>
 
         <article class="col-xs-6 col-sm-6 col-md-4 col-lg-3 showcase-item">
 
-
-          <img class="img-responsive" src="images/forest-450_small.jpg" alt="There are trees in the forest">
-
-          <div class="item-title">
-            <h3>Field trip around Berlin</h3>
+          <div role="button" class="modal-link" data-toggle="modal" data-target="#portfolio-modal">
+            <img class="img-responsive" src="images/portfolio-450_small.png" alt="There are trees in the forest">
           </div>
-
-          <div class="item-link">
-
-            <a href="https://github.com/Kyushi">
-              See more ...
-            </a>
-
+          <div class="item-title">
+            <h3>Portfolio Website</h3>
+            <p class="item-description">
+              The very portfolio page that you are currently looking at.
+            </p>
+            <a href="https://github.com/Kyushi/portfolio" target="_blank">https://github.com/Kyushi/portfolio</a>
           </div>
 
         </article>
 
         <article class="col-xs-6 col-sm-6 col-md-4 col-lg-3 showcase-item">
-
-          <img class="img-responsive" src="images/riverbed-450_small.jpg" alt="Once there was water in the riverbed">
-
-          <div class="item-title">
-            <h3>Field trip around Berlin</h3>
+          <div role="button" class="modal-link" data-toggle="modal" data-target="#franziskusnakajima-modal">
+            <img class="img-responsive" src="images/franziskusnakajima-450_small.png" alt="Once there was water in the riverbed">
           </div>
-
-          <div class="item-link">
-
-            <a href="https://github.com/Kyushi">
-              See more ...
-            </a>
-
+          <div class="item-title">
+            <h3>franziskusnakajima.net</h3>
+            <p class="item-description">
+              Website for my artwork, built with secretary. I used and tweaked a design template with this open source artist cms.
+            </p>
+            <a href="http://franziskusnakajima.net/" target="_blank">http://franziskusnakajima.net</a>
           </div>
 
         </article>
 
         <article class="col-xs-6 col-sm-6 col-md-4 col-lg-3 showcase-item">
-
-          <img class="img-responsive" src="images/stream-450_small.jpg" alt="Tall grass is growing around a small stream">
-
+          <div role="button" class="modal-link" data-toggle="modal" data-target="#stream-modal">
+            <img class="img-responsive" src="images/stream-450_small.jpg" alt="Tall grass is growing around a small stream">
+          </div>
           <div class="item-title">
             <h3>Field trip around Berlin</h3>
-          </div>
-
-          <div class="item-link">
-
-            <a href="https://github.com/Kyushi">
-              See more ...
+            <p class="item-description">
+              This is just an additional link to show how the design of this portfolio handles four links on extra wide screens as well as a second row of showcase items on standard (960px) desktop size screens.
+            </p>
+            <a href="https://github.com/Kyushi" target="_blank">
+              Link to my github page
             </a>
-
           </div>
 
         </article>
@@ -177,5 +141,128 @@
       </footer>
 
     </div>
+
+
+<!-- modals start here -->
+
+<!-- modal for ohsoartsy -->
+<div id="ohsoartsy-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="gridSystemModalLabel">Ohsoartsy!</h4>
+    </div>
+    <div class="modal-body">
+      <picture class="modal-picture">
+        <source media="(min-width:450px)" srcset="images/ohsoartsy-940_medium_1x.png" />
+        <img class="img-responsive" src="images/ohsoartsy-450_small.png" alt="Screenshot of an arthouse movie trailer website">
+      </picture>
+      <p class="item-description-modal">
+        A movie trailer website with a python backend that I built for Udacity's Full Stack Web Developer Nanodegree in July 2016.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <p class="item-link-modal">
+        Link to source code:
+        <a href="https://github.com/Kyushi/ohsoartsy" target="_blank">
+          https://github.com/Kyushi/ohsoartsy
+        </a>
+      </p>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- end of modal for ohsoartsy -->
+
+<!-- modal for portfolio -->
+<div id="portfolio-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="gridSystemModalLabel">Portfolio Website</h4>
+    </div>
+    <div class="modal-body">
+      <picture class="modal-picture">
+        <source media="(min-width:450px)" srcset="images/portfolio-940_medium_1x.png" />
+        <img class="img-responsive" src="images/portfolio-450_small.png" alt="Screenshot of this portfolio page">
+      </picture>
+      <p class="item-description-modal">
+        The very portfolio page that you are currently looking at. Built for Udacity's Full Stack Web Developer Nanodegree in August 2016.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <p class="item-link-modal">
+        Link to source code:
+        <a href="https://github.com/Kyushi/portfolio" target="_blank">
+          https://github.com/Kyushi/portfolio
+        </a>
+      </p>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- end of modal for portfolio -->
+
+<!-- modal for franziskusnakajima -->
+<div id="franziskusnakajima-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="gridSystemModalLabel">franziskusnakajima Website</h4>
+    </div>
+    <div class="modal-body">
+      <picture class="modal-picture">
+        <source media="(min-width:450px)" srcset="images/franziskusnakajima-940_medium_1x.png" />
+        <img class="img-responsive" src="images/franziskusnakajima-450_small.png" alt="Screenshot of artist website">
+      </picture>
+      <p class="item-description-modal">
+        Website for showcasing my artworks. It was built with the open source cms 'secretary'. I am planning to redo it very soon.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <p class="item-link-modal">
+        Link to source code:
+        <a href="https://github.com/Kyushi/franziskusnakajima" target="_blank">
+          http://franziskusnakajima.next
+        </a>
+      </p>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- end of modal for franziskusnakajima -->
+
+<!-- modal for stream -->
+<div id="stream-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="gridSystemModalLabel">Field trip around Berlin</h4>
+    </div>
+    <div class="modal-body">
+      <picture class="modal-picture">
+        <source media="(min-width:450px)" srcset="images/stream-940_medium_1x.jpg" />
+        <img class="img-responsive" src="images/stream-450_small.png" alt="Small stream close to Berlin">
+      </picture>
+      <p class="item-description-modal">
+        This is just an additional link to show how the design of this portfolio handles four links on extra wide screens as well as a second row of showcase items on standard (960px) desktop size screens. The photo is from a recent hike in the vicinity of Berlin
+      </p>
+    </div>
+    <div class="modal-footer">
+      <p class="item-link-modal">
+        There is no link for this item.
+      </p>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- end of modal for stream -->
+
+<!-- end of modals -->
+
   </body>
 </html>
