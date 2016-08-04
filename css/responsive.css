@@ -1,7 +1,10 @@
 /* styling elements for max-width 450px */
 
 @media screen and (max-width: 450px) {
-  h1, .logo {
+
+  /* change header sizes on smaller screens */
+  h1,
+  .logo {
     font-size: 25px;
   }
 
@@ -12,9 +15,12 @@
   h3 {
     font-size: 15px;
   }
+
   h5 {
     font-size: 12px;
   }
+
+  /* force showcase-item to full width under 450px */
   .showcase-item {
     width: 100%;
   }

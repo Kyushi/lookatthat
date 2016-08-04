@@ -3,58 +3,61 @@
   margin: 0;
   padding: 0;
 }
-/* general styles for entire body */
 
+/* general styles for entire body */
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* make sure every image on the page is displayed at max 100% */
-
+/* make sure every image on the page is displayed at max 100% - logo will be exception */
 img {
   max-width: 100%;
 }
 
 /* header sizes, weights and colours */
-
 h1 {
-  font-weight: 300;
   font-size: 35px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 h2 {
-  font-weight: 300;
   font-size: 25px;
-  color: #a1a1a3; }
+  color: #a1a1a3;
+}
 
 h3 {
-  font-weight: 200;
   font-size: 20px;
-  color: #735280; }
+  color: #735280;
+}
 
 h4 {
-  font-weight: 200;
   font-size: 18px;
 }
 
 h5 {
-  font-weight: 200;
   font-size: 14px;
-  margin: 0;
 }
 
-/* general styles for paragraphs */
 
-p, a {
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 200;
+}
+
+/* general styles for paragraphs and links */
+p,
+a {
   font-size: 15px;
   font-weight: 300;
 }
 
-/* my styles to add to bootstrap */
-article {
-  margin-bottom: 10px;
-}
-
+/* header styles */
 .page-title {
   text-align: right;
 }
@@ -73,6 +76,12 @@ article {
   min-width: 45px;
 }
 
+/* article styles */
+article {
+  margin-bottom: 10px;
+}
+
+/* showcase styles */
 .showcase-title {
   margin: 10px 0;
 }
@@ -93,12 +102,29 @@ article {
   text-overflow: ellipsis;
 }
 
-.social-media-icons li {
-  float: left;
-  list-style-type: none;
+.item-see-more {
+  color: #337ab7;
 }
-.social-media-icons:after {
-  clear: both;
+
+.item-see-more:hover {
+  text-decoration: underline;
+}
+
+/* modal styles */
+.close {
+  float: right;
+}
+
+.modal-title {
+  float: left;
+}
+
+.modal-header {
+  width: 100%;
+}
+
+.modal-header:after {
+  clear:both;
 }
 
 .item-description-modal {
@@ -106,32 +132,24 @@ article {
   margin-top: 0.67em;
 }
 
-.item-link, .item-link-modal {
+.item-link,
+.item-link-modal {
   text-align: left;
 }
 
-.close {
-  float: right;
-}
-.modal-title {
-  float: left;
-}
-.modal-header {
-  width: 100%;
-}
-.modal-header:after {
-  clear:both;
-}
-.modal-see-more {
-  color: #337ab7;
-}
-.modal-see-more:hover {
-  text-decoration: underline;
-}
-
+/*footer styles */
 footer {
   font-size: 15px;
   padding-bottom: 0.67em;
+}
+
+.social-media-icons li {
+  float: left;
+  list-style-type: none;
+}
+
+.social-media-icons:after {
+  clear: both;
 }
 
 /* zocial */
