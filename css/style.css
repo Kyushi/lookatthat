@@ -156,3 +156,7 @@ footer {
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
 }
+
+[class*="zocial-"]:hover {
+  text-decoration: none;
+}
