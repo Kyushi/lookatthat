@@ -9,12 +9,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* make sure every image on the page is displayed at max 100% - logo will be exception
-img {
-  max-width: 100%;
-}
-*/
-
 /* header sizes, weights and colours */
 h1 {
   font-size: 35px;
@@ -130,7 +124,7 @@ article {
 }
 
 .modal-header:after {
-  clear:both;
+  clear: both;
 }
 
 .item-description-modal {
