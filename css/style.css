@@ -9,10 +9,11 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* make sure every image on the page is displayed at max 100% - logo will be exception */
+/* make sure every image on the page is displayed at max 100% - logo will be exception
 img {
   max-width: 100%;
 }
+*/
 
 /* header sizes, weights and colours */
 h1 {
@@ -58,6 +59,16 @@ a {
 }
 
 /* header styles */
+.logo {
+  font-size: 35px;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+
+.logo-img {
+  min-width: 45px;
+}
+
 .page-title {
   text-align: right;
 }
@@ -66,14 +77,9 @@ a {
   margin-bottom: 0.3em;
 }
 
-.logo {
-  font-size: 35px;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-}
-
-.logo img {
-  min-width: 45px;
+.page-subtitle {
+  font-size: 18px;
+  font-weight: 200;
 }
 
 /* article styles */
@@ -86,7 +92,7 @@ article {
   margin: 10px 0;
 }
 
-.showcase-item img {
+.showcase-img {
   border: 1px solid #000;
 }
 
